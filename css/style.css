@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navigation{
+background-image: linear-gradient(to left, rgb(231, 43, 184),rgb(43, 131, 231)) ;
+    height: 70px;
+    position: sticky;
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+    top: 0;
+    z-index: 999;
+}
+
+.navigation i{
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    
+}
+.navigation i:hover{
+    color: rgb(231, 43, 184);
+    cursor: pointer;
+}
+
+.navigation>img{
+    height: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation  ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-right: 70px;
+    font-size: 0.875em;
+    transition: ease-in-out 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navigation ul li a:hover{
+    color: var(--main-gold);
+}
+
+/* main */
+
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 45rem;
+    overflow: hidden;
+    padding: 1rem;
+    padding-top: 10rem;
+}
+
+.circles{
+    border-radius: 100rem;
+    position: absolute;
+}
+.ca{
+    background-color: rgb(43, 131, 231);
+    width: 20rem;
+    height: 20rem;
+    z-index: -1;
+    top: -5%;
+    left: -5%;
+    opacity: 0.5;
+}
+.cb{
+    background-color: rgb(43, 131, 231);
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+    top: 5%;
+    left: 25%;
+    opacity: 0.5;
+}
+.cc{
+    background-color: rgb(43, 131, 231);
+    width: 2rem;
+    height: 2rem;
+    z-index: -1;
+    bottom: 10%;
+    left: 20%;
+    opacity: 0.5;
+}
+.cd{
+    background-color: rgb(43, 131, 231);
+    width: 5rem;
+    height: 5rem;
+    z-index: -1;
+    bottom: 3%;
+    left: 30%;
+    opacity: 0.5;
+}
+.ce{
+    background-color: rgb(231, 43, 184);
+    width: 21rem;
+    height: 21rem;
+    z-index: -1;
+    right: -8%;
+    top: -8%;
+    opacity: 0.5;
+}
+.cf{
+    background-color: rgb(231, 43, 184);
+    width: 10rem;
+    height: 10rem;
+    z-index: -1;
+    right: 31%;
+    top: 3%;
+    opacity: 0.5;
+}
+.cg{
+    background-color: rgb(231, 43, 184);
+    width: 5rem;
+    height: 5rem;
+    z-index: -1;
+    right: 35%;
+    bottom: 5%;
+    opacity: 0.5;
+}
+.ch{
+    background-color: rgb(231, 43, 184);
+    width: 2rem;
+    height: 2rem;
+    z-index: -1;
+    right: 15%;
+    bottom: 5%;
+    opacity: 0.5;
+}
+
+.ken-main,.shaq-main{
+    position: relative;
+    width: 50%;
+    height: 25rem;
+    margin: 0 auto 0 auto;
+}
+.ken-main p{
+    max-width: 30%;
+}
+.shaq-main p{
+    max-width: 30%;
+}
+.ken-main .ken-holder{
+    padding-left: 10%;
+    width: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
+}
+.ken-main .ken-holder button{
+        margin-bottom: 3rem;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 600;
+
+        color: white;
+}
+.ken-main .ken-holder h1{
+    color: rgb(43, 131, 231);
+}
+.shaq-main .shaq-holder{
+    padding-left: 10%;
+    width: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
+}
+.shaq-main .shaq-holder button{
+    margin-bottom: 3rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.shaq-main .shaq-holder h1{
+    color: rgb(231, 43, 184);
+}
+
+p{
+    font-family:'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: slategray;
+    margin-bottom: 1rem;
+
+}
+h1{
+    font-family:'League Spartan', sans-serif;
+    font-size: 3rem;
+    margin: 3rem 0rem 1rem 0rem;
+    z-index: 3;
+}
+
+.btn-a{
+    background-color: rgb(43, 131, 231);
+}
+.btn-a:hover{
+    background-color: rgba(43, 131, 231, 0.5);
+}
+.btn-b{
+    background-color: rgb(231, 43, 184);
+}
+.btn-b:hover{
+    background-color: rgb(231, 43, 184, 0.5);
+}
+
+.image-holder-a, .image-holder-b{
+    background-color: gray;
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 40%;
+    overflow: hidden;
+    object-position: center;
+    height: 100%;
+}
+
+.image-holder-a img{
+    position: absolute;
+    width: 100%;
+   
+}
+.image-holder-b img{
+    position: absolute;
+    width: 100%;
+   
+}
+
+#garfin{
+margin-top: 10rem;
+margin-bottom: 10rem;
+
+}
+
+.hover {
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+    -webkit-mask:
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+  .hover:hover {
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }
+
+#garfin h2{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+#garfin p{
+    font-family:'Montserrat', sans-serif;
+    font-weight: medium;
+    margin-bottom: 1rem;
+
+    color: rgb(25, 24, 24);
+}
+#garfin span{
+    font-family:'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: rgb(25, 24, 24);
+}
+#garfin i{
+    color: rgb(43, 131, 231);
+    margin-right: 5px;
+}
+
+#garfin .garfin-parent-holder{
+
+    display: flex;
+    width: 100%;
+    height: 23rem;
+}
+#garfin .garfin-parent-holder .garfin-img-holder{
+    position: relative;
+    width: 40%;
+    padding: 2rem;
+    overflow: hidden;
+}
+#garfin .garfin-parent-holder .garfin-img-holder img{
+    position: absolute;
+    object-fit: cover;
+    width:  80%;
+    left: 3rem;
+    top:-10rem;
+}
+#garfin .garfin-parent-holder .garfin-text-holder{
+    width: 60%;
+    padding: 2rem;
+}
+#garfin .garfin-parent-holder .garfin-text-holder button{
+
+}
+#garfin .garfin-parent-holder .garfin-text-holder .profile-details div{
+    display: flex;
+}
+#garfin .garfin-parent-holder .garfin-text-holder .profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#garfin .garfin-parent-holder .garfin-text-holder  button{
+    margin-bottom: 3rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: rgb(43, 131, 231);
+    color: white;
+}
+
+/* shaquera */
+
+#shaquera{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+   }
+   #shaquera h2{
+       font-family:'Montserrat', sans-serif;
+       font-weight: bolder;
+       margin-bottom: 1rem;
+       width: auto;
+   }
+   #shaquera p{
+       font-family:'Montserrat', sans-serif;
+       font-weight: medium;
+       margin-bottom: 1rem;
+       width: 100%;
+       color: rgb(25, 24, 24);
+   }
+   #shaquera span{
+       font-family:'Montserrat', sans-serif;
+       font-weight: bolder;
+       margin-bottom: 1rem;
+       width: 100%;
+       color: rgb(25, 24, 24);
+   }
+   #shaquera i{
+       color:  rgb(231, 43, 184);
+       margin-right: 5px;
+   }
+  
+   #shaquera .shaquera-parent-holder{
+  
+       display: flex;
+       width: 100%;
+       height: 23rem;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-img-holder{
+       position: relative;
+       width: 40%;
+       padding: 2rem;
+       overflow: hidden;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-img-holder img{
+       position: absolute;
+       object-fit: cover;
+       width:  80%;
+       left: 3rem;
+       top:-10rem;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-text-holder{
+       width: 60%;
+       padding: 2rem;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-text-holder button{
+  
+   }
+   #shaquera .shaquera-parent-holder .shaquera-text-holder .profile-details div{
+       display: flex;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-text-holder .profile-details {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+   #shaquera .shaquera-parent-holder .shaquera-text-holder  button{
+       margin-bottom: 3rem;
+       border: none;
+       padding: 1rem;
+       cursor: pointer;
+       border-radius: 5px;
+       font-family:'Montserrat', sans-serif;
+       font-weight: 600;
+       background-color:  rgb(231, 43, 184);
+       color: white;
+   }
+
+   /* footer */
+
+   * {
+  box-sizing: border-box;
+}
+
+label{
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(43, 131, 231);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-image: linear-gradient(to left, rgb(231, 43, 184),rgb(43, 131, 231)) ;
+  padding: 2rem;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.column h1{
+color: white;
+font-family:'League Spartan', sans-serif;
+font-size: 5rem;
+margin-top: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container h2{
+    color: white;
+    font-family:'League Spartan', sans-serif;
+}
+
+/* gallery part */
+
+.gallery-sec {
+    margin-top: 10rem;
+}
+.gallery-sec .text-gal{
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 35%;
+}
+.gallery-sec .text-gal h2{
+    font-family:'League Spartan', sans-serif;
+    color: transparent;
+    background: linear-gradient(to left, rgb(231, 43, 184),rgb(43, 131, 231)) ;
+    -webkit-background-clip: text;
+}
+
+.gallery{
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0  auto;
+}
+.gallery ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+}
+.gallery ul li{
+    list-style: none;
+    padding: 1rem 1.25rem;
+
+    cursor: pointer;
+    font-family:'Montserrat', sans-serif;
+}
+
+.gallery ul li.active{
+    border-bottom:solid 3px rgb(43, 131, 231);
+}
+
+.gallery-holder {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 30rem;
+    overflow-y: scroll;
+    background-color: #d3d3d3;
+    position: relative;
+}
+
+.gallery-holder .imageBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    display: block;
+}
+.gallery-holder .hide{
+    display: none;
+}
+
+.gallery-holder .imageBox > video,iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 768px){
+
+    /*nav*/
+
+    .navigation .navigation-links{
+       background-image: linear-gradient(to left, rgb(231, 43, 184),rgb(43, 131, 231)) ;
+        z-index: 999;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        width: 60vw;
+        height: 100vh;
+        box-shadow: var(--shadow-);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        background-color: var(--main-gold);
+      }
+
+      .navigation  i{
+        display: block;
+    }
+      .navigation .navigation-links i{
+          font-size: 1.5rem;
+          color: var(--white-pure);
+      }
+      .navigation .navigation-links i:hover{
+          color: var(--main-gold);
+          cursor: pointer;
+      }
+      .navigation .navigation-links ul{
+          display: block;
+          float: right;
+          text-align: center;
+          width: 100%;
+      }
+      .navigation .navigation-links ul li a{
+          width: 100%;
+          padding: 1rem;
+      }
+      .navigation .navigation-links ul li a:hover{
+          background-color: var(--darkest-blue);
+      }
+
+      .navigation .navigation-links i{
+        margin-bottom: 1rem;
+        display: block;
+        font-size: 1.5rem;
+        color: var(--white-pure);
+    }
+
+     nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1025px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  main{
+    display: block;
+}
+
+  .image-holder-a, .image-holder-b{
+    border-radius: 100rem;
+    width: 20rem;
+    height: 20rem;
+    border: solid red 1rem ;
+}
+  .image-holder-a{
+    border: solid rgb(22, 79, 145) 1rem ;
+}
+  .image-holder-b{
+    border: solid rgb(128, 20, 101) 1rem ;
+}
+
+.image-holder-a img{
+    position: absolute;
+    width: 100%;
+   
+}
+.image-holder-b img{
+    position: absolute;
+    width: 100%;
+   
+}
+
+.ken-main .shaq-holder{
+    margin: 5rem 10rem 0 auto;
+    position: absolute;
+}
+}
+@media screen and (max-width:  769px) {
+    .garfin .garfin-img-holder{
+        display: block;
+    }
+}
